@@ -8,17 +8,11 @@ Laravel
 MySQL
 
 ## Screenshots
-Start Screen
-![Desktop App](Screenshots/ga.png)
 Home
-![Home](Screenshots/gah.png)
-Cart
-![Cart](Screenshots/gac.png)
-Checkout
-![Checkout](Screenshots/gach.png)
-My Order
-![My Order](Screenshots/gao.png)
-Admin
-![Admin](Screenshots/gaa.png)
-Admin Manage Order
-![Manage Order](Screenshots/gaao.png)
+![Home](Screenshots/clh.png)
+Booking Form where User can choose Doctor and Date, filling Name and Email and Complaint
+![Book](Screenshots/clh1.png)
+Admin Login
+![Admin](Screenshots/clha.png)
+Admin Booking where Admin can see and cancel booking, also can see the complaint of the patient.
+![Admin Booking](Screenshots/clha1.png)
