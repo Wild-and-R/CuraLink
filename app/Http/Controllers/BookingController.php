@@ -51,9 +51,9 @@ class BookingController extends Controller
         $appointment->load('doctor');
 
         // Send confirmation email
-        Mail::to($appointment->email)->send(new AppointmentBooked($appointment));
+        //Mail::to($appointment->email)->send(new AppointmentBooked($appointment));
 
-        return back()->with('success', 'Appointment Booked Successfully! A confirmation email has been sent.');
+        return back()->with('success', 'Appointment Booked Successfully!');
     }
 
     public function bookedSlots(Request $request)

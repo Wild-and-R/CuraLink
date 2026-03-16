@@ -34,9 +34,8 @@ RUN npm run build
 # Expose port
 EXPOSE 8000
 
-# Migrate, seed, cache, and start Laravel server
-CMD php artisan migrate --force --seed && \
+# Migrate database, cache config & routes, start Laravel server (no seeding)
+CMD php artisan migrate --force && \
     php artisan config:cache && \
     php artisan route:cache && \
-    php artisan queue:work --tries=1 --timeout=0 & \
     php artisan serve --host=0.0.0.0 --port=${PORT:-8000}
